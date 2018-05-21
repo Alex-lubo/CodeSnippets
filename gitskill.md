@@ -38,3 +38,12 @@ If you are trying to "checkout" a new remote branch (that exists only on the rem
 git fetch origin
 git checkout --track origin/<remote_branch_name>
 ```
+3. delete local branch and remote branch
+```
+# delete branch local
+$ git branch -D feature/abc
+
+# delete remote branch
+$ git push origin --delete feature/abc
+```
+Note: local branch has nothing to do with remote branch, they are completely separate objects.
